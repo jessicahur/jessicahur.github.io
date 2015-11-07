@@ -263,7 +263,11 @@ a.BackToTop{
     font-size: 0.005em;
     font-family: "Helvetica", 'san-serif';
     background-color:#accfcc;
+<<<<<<< HEAD
     margin: 50px auto 20px auto;
+=======
+    margin: 100px auto 20px auto;
+>>>>>>> d3e8cd8bd79a60255bb0142633c07df5aa56f951
     border-collapse: collapse;
     border: solid 1px black;
   }
