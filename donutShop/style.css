@@ -204,11 +204,6 @@ input:focus{
   background-color: #FFFDD3;
 }
 
-button:active{
-  background-color: #DDD2FF;
-  width: 30%;
-  margin: auto;
-}
 
 a.BackToTop{
   position: absolute;
