@@ -102,7 +102,7 @@ div.sections{
   font-family: 'Indie Flower', cursive;
   margin: 40px auto;
   height: 232px;
-  width: 750px;  /*setting fixed pixel well eliminate the text flowing out of BG*/
+  width: 750px;  /*setting fixed pixel well eliminate the text flowing out of BG, or I can limit the <p> itself with overflow*/
   border-radius: 10px;
 }
 
@@ -153,6 +153,7 @@ h2#franchise{
   margin: auto;
   text-align: center;
 }
+
 
 table{
   font-family: 'Abril Fatface', cursive;
@@ -278,7 +279,7 @@ a.BackToTop{
     text-align: center;
   }
 
-  table{
+  /*table{
     font-size: 0.005em;
     font-family: "Helvetica", 'san-serif';
     background-color:#accfcc;
@@ -300,7 +301,49 @@ a.BackToTop{
   td{
     border-bottom: solid 1px black;
     text-align: center;
+  } */
+
+  table, thead, tbody, th, td, tr {
+    display: block;
   }
+
+  tr.hours{ /*Hiding table header*/
+    display:none;
+  }
+
+  td {
+    /* Behave  like a "row"*/
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td::before {
+    /* Add pseudo table header */
+    position: absolute;
+    color: green;
+    /* Reposition so they don't overlap with the data */
+    top: center;
+    left: 6px;
+    width: 40%; /*Shifting label 40% to the left of the viewing screen*/
+    /*padding-right: 10px; no effect*/
+    white-space: nowrap; /*Specify that text in this portion will never wrap*/
+  }
+
+  td:nth-of-type(1):before { content: "Location"; }
+  td:nth-of-type(2):before { content: "8AM"; }
+  td:nth-of-type(3):before { content: "9AM"; }
+  td:nth-of-type(4):before { content: "10AM"; }
+  td:nth-of-type(5):before { content: "11AM"; }
+  td:nth-of-type(6):before { content: "12PM"; }
+  td:nth-of-type(7):before { content: "1PM"; }
+  td:nth-of-type(8):before { content: "2PM"; }
+  td:nth-of-type(9):before { content: "3PM"; }
+  td:nth-of-type(10):before { content: "4PM"; }
+  td:nth-of-type(11):before {content: "5PM"; }
+  td:nth-of-type(12):before {content: "6PM"; }
+  td:nth-of-type(13):before {content: "Total"; }
 
   form{
     width: 50%;
@@ -318,12 +361,6 @@ a.BackToTop{
   input:focus{
     margin: auto;
     background-color: #FFFDD3;
-  }
-
-  button:active{
-    background-color: #DDD2FF;
-    width: 30%;
-    margin: auto;
   }
 
   a.BackToTop{
