@@ -48,33 +48,51 @@ div.truck {
     font-weight: bold;
     font-family: 'Indie Flower', cursive;
     color: #FE93D7;
-    position:absolute;
+    position: absolute;
     top: 200px;
     background-color: none;
     -webkit-animation: running 10s infinite linear; /* Chrome, Safari, Opera */
-    animation-name: running 10s infinite linear;
-}
-
-p#deliver{
-  left: 8px;
+         -o-animation: running 10s infinite linear;
+        -ms-animation: running 10s infinite linear;
+       -moz-animation: running 10s infinite linear;
+    animation-animation: running 10s infinite linear;
 }
 
 div.truck:hover{
   -webkit-animation-play-state: paused; /* Chrome, Safari, Opera */
+  -o-animation-play-state: paused;
+  -ms-animation-play-state: paused;
+  -moz-animation-play-state: paused;
   animation-play-state: paused;
 }
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes running {
-    0%   {left: 0%;}
-    100%  {left: 100%;}
+  0%   {left: 0%;}
+  100%  {left: 100%;}
+}
+
+@-o-keyframes running {
+  0%   {left: 0%;}
+  100%  {left: 100%;}
+}
+
+@-ms-keyframes running {
+  0%   {left: 0%;}
+  100%  {left: 100%;}
+}
+
+@-moz-keyframes running {
+  0%   {left: 0%;}
+  100%  {left: 100%;}
 }
 
 /* Standard syntax */
 @keyframes running {
-    0%   {left: 0%;}
-    100%  {left: 100%;}
+  0%   {left: 0%;}
+  100%  {left: 100%;}
 }
+
 /*==============End of Truck Animation======*/
 
 
@@ -89,8 +107,10 @@ div.sections{
 }
 
 div.sections:hover{
-  -webkit-tranform: scale (1.1);
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
+  -o-animation: scale(1.1);
   transform: scale(1.1);
 }
 
@@ -204,7 +224,6 @@ a.BackToTop{
 
   body{
     background-color: #feebcb;
-    margin: auto;
   }
   /****Header*******/
   header{
