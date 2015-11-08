@@ -51,11 +51,11 @@ div.truck {
     position: absolute;
     top: 200px;
     background-color: none;
-    -webkit-animation: running 10s infinite linear; /* Chrome, Safari, Opera */
-         -o-animation: running 10s infinite linear;
-        -ms-animation: running 10s infinite linear;
-       -moz-animation: running 10s infinite linear;
-            animation: running 10s infinite linear;
+    -webkit-animation: runningTruck 10s infinite linear; /* Chrome, Safari, Opera */
+         -o-animation: runningTruck 10s infinite linear;
+        -ms-animation: runningTruck 10s infinite linear;
+       -moz-animation: runningTruck 10s infinite linear;
+            animation: runningTruck 10s infinite linear;
 }
 
 div.truck:hover{
@@ -67,28 +67,28 @@ div.truck:hover{
 }
 
 /* Chrome, Safari, Opera */
-@-webkit-keyframes running {
+@-webkit-keyframes runningTruck {
   0%   {left: 0%;}
   100%  {left: 100%;}
 }
 
-@-o-keyframes running {
+@-o-keyframes runningTruck {
   0%   {left: 0%;}
   100%  {left: 100%;}
 }
 
-@-ms-keyframes running {
+@-ms-keyframes runningTruck {
   0%   {left: 0%;}
   100%  {left: 100%;}
 }
 
-@-moz-keyframes running {
+@-moz-keyframes runningTruck {
   0%   {left: 0%;}
   100%  {left: 100%;}
 }
 
 /* Standard syntax */
-@keyframes running {
+@keyframes runningTruck {
   0%   {left: 0%;}
   100%  {left: 100%;}
 }
