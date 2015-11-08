@@ -55,7 +55,7 @@ div.truck {
          -o-animation: running 10s infinite linear;
         -ms-animation: running 10s infinite linear;
        -moz-animation: running 10s infinite linear;
-    animation-animation: running 10s infinite linear;
+            animation: running 10s infinite linear;
 }
 
 div.truck:hover{
