@@ -285,6 +285,7 @@ a.BackToTop{
     margin: 50px auto 20px auto;
     border-collapse: collapse;
     border: solid 1px black;
+    width: 60%;
   }
 
   tr#hoursHeading{
