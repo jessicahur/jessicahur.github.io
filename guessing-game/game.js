@@ -38,7 +38,7 @@ var ask = function (){
     if (answer===keys[i][j] || answer===keys[i][j+1]){
       counter++;
       congrats = "Congratulations "+name+"! You answered "+counter+"/"+ans.length+" questions correctly!" +
-              '<img src="SmileyFace-100x100.gif">';
+              '<img src="SmileyFace-200x200.png">';
       console.log("Your score is "+counter);
       var message = document.getElementById(answerArray[i]);
       message.innerHTML = congrats;
