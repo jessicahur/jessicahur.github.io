@@ -1,0 +1,15 @@
+{
+  "name": "tracy-valley-cleaner",
+  "version": "1.0.0",
+  "description": "a dry cleaning static website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dry",
+    "clean"
+  ],
+  "author": "Jessica Hur",
+  "license": "ISC"
+}

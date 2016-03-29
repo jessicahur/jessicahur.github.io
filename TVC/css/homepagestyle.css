@@ -1,0 +1,35 @@
+body{
+	background-color:#fefefe;
+	color:#46413e;
+	font-family: Times,Georgia,serif;
+	max-width:1260px;
+	min-width:680px;}
+	
+.header{
+	font-size:24px;
+	font-weight:bold;
+	letter-spacing:0.3em;
+	text-align:center;}
+	
+.tabbar{
+	font-size:20px;
+	font-weight:bold;
+	text-align:center;}
+	
+a {
+	text-decoration:none;
+	color:#46413e;}
+
+li{
+	display:inline;
+	margin-right:20px;}
+	
+tr.description{
+	width:130px;
+	font-size:20px;
+	font-weight:bold;
+	text-align:center;
+	color:#46413e;}
+	
+table {
+	margin:300 px;}

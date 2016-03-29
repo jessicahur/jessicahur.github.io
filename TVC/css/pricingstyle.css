@@ -1,0 +1,91 @@
+body{
+	width:1200px;
+	background-color:#fefefe;
+	color:#46413e;
+	font-family: Times,Georgia,serif;
+	font-size:1.15em;
+	margin:0.625em auto;
+	padding:1.25em;}
+	
+	
+.header{
+	font-size:2.00em;
+	font-weight:bold;
+	letter-spacing:0.3em;
+	text-align:center;}
+
+p.address{
+	font-size: 0.75em;
+	font-weight:bold;
+	letter-spacing:0.05em;
+	text-align:center;}
+	
+#tabbar{
+	border-top: 2px solid #000;
+	border-bottom: 2px solid #000;
+	font-size:1.5em;
+	font-weight:bold;}
+	
+	/************************Content coding*********************************/
+
+#content{overflow: auto;
+		text-align:center;}
+	
+a {
+	text-decoration:none;
+	color:#46413e;
+	padding:10px;}
+	
+	
+a.hover, a.on{
+	background-color:lightgrey;} 
+
+ul{
+	text-align:center;
+	margin:10px auto;}
+	
+	
+li{
+	display:inline;
+	margin-right:1.25em;}
+/*******Styling of Pricings starts here*****/
+
+table#dryclean{
+	background-color:#f2d4c2;
+	margin:25px auto;
+	font-size:1.25em;
+	width:50%;
+	border-collapse:collapse;}
+	
+th,td{
+	border:1px solid grey;
+	padding:7px 7px;}
+	
+th.price, td.price{
+	width:150px;} /* Set width to td and th, then set table-layout to fixed will fixed the column width*/
+
+tr.drycleanhead{
+	background-color:#f0bda0;
+	border-bottom: 2px;}
+
+thead.dryclean{
+	background-color:#background-color:#f0bda0;;}
+
+tr.even{
+	background-color: #fcfbfa /*#ffefe5*/;}
+td.price{
+	text-align:right;}
+	
+table#laundry{
+	background-color: #e8f2f6;
+	margin:50px auto;
+	font-size:1.25em;
+	width:50%;
+	border-collapse:collapse;
+	table-layout:fixed;}
+	
+tr.even1{
+	background-color:#d2edf6;}
+	
+tr.laundryhead{
+	background-color:#aee4ea;}
